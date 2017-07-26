@@ -1737,10 +1737,7 @@ input.flipped {
           transform: rotate3d(1, 0, 0, 180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
-  transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
   transition: transform 0.6s ease 0s, opacity 0.6s ease 0s;
-  transition: transform 0.6s ease 0s, opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
   opacity: 0;
 }
 
