@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Vojislav Grujić">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Gruppo:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Portfolio - Vojislav Grujić</title>
+</head>
+<body>
+
+  <input class="utility-input" type="checkbox" id="search-disabled">
+  <div class="modal search-disabled">
+    <label for="search-disabled"><span class="material-icons">close</span></label>
+    <p>No can do for now!</p>
+  </div>
+
+  <div class="container">
+
+    <div class="portfolio-title">
+      <h1>Portfolio</h1>
+      <p>Vojislav Grujić</p>
+    </div>
+
+    <section id="about" class="section about">
+      <div class="content clear">
+        <h2>About Me</h2>
+        <p>Welcome!<br>
+          I am Vojislav and this is my portfolio website.
+        </p>
+        <p>
+          I live and work in Serbia. I got a degree in Astrophysics at the Belgrade university, and I am currently working as a physics teacher in school.
+        </p>
+        <p>
+          I love physics, astrophysics and math. But I also love web technologies and programming. And I have decided to pursue a new career in web development. This website is one of the many projects that I have done during my web development education at <a href="http://bovacademy.com" target="_blank">Bov Academy</a>.<br>
+          The most interesting fact about this website is that it is completely built by using only HTML and CSS. There is no JavaScript involved in creation of this website.
+        </p>
+        <p>
+          I am a person that has many interests and hobbies. As a teenager I was playing drums in a band, and I also play a guitar at the basic level. During my teenage years and as a young adolescent I was practicing skydiving which was one of the hobbies that I was most passionate about. Later I started to ride a mountain bike and explore the surroundings of my town and further areas. That lead to a 20 day bicycle road trip to Greece, a non-forgetting experience.
+        </p>
+        <p>
+          I also like hiking, scuba diving, building stuff, making experiments with various things, and together with my brother, I am slowly learning to work with honey bees.
+        </p>
+        <p>
+          Check out the <a href="https://www.youtube.com/watch?v=ePAUTZf26ro" target="_blank">recumbent bike</a> that I have built with the help of my brother, and these <a href="https://goo.gl/photos/XWBtAuvXfuufFdck9" target="_blank">Camera Obscura images</a> that I made.
+        </p>
+        <p>
+          The mountain on the image in the background is called &quot;Suva planina&quot; which literally means &quot;Dry mountain&quot;, but the real meaning is &quot;Bare mountain&quot; because of the lack of trees on it's western side. My hometown is about 30km to the southwest of this mountain.
+        </p>
+      </div>
+    </section>
+
+    <blockquote id="projects" class="section-break text-center">
+      <strong>&quot;Man cannot discover new oceans unless he has the courage to lose sight of the shore.&quot;<br></strong>
+      — André Gide
+    </blockquote>
+
+    <section class="section projects clearfix">
+      <div class="content pull-right">
+        <h2 class="text-right">Projects</h2>
+        <p>In this section you can see the projects that I have done so far. Most of them are done as the student assignments at <a href="http://bovacademy.com" target="_blank">Bov Academy</a>.</p>
+        <p>As mentioned in the &quot;About&quot; section, this website does not use JavaScript, but some of the projects displayed in this section do.</p>
+        <p>
+          <label class="clearfix" for="projects-container-open">
+            <span class="pull-right button">Show me the stuff!</span>
+          </label>
+        </p>
+      </div>
+
+      <input class="utility-input" type="checkbox" id="projects-container-open" name="projects-container">
+      <div class="projects-container">
+        <label for="projects-container-open">
+          <span class="icon icon-close material-icons">close</span>
+        </label>
+        <div class="project-tabs">
+          <input type="radio" class="utility-input" name="active-project" id="project-image-gallery" checked="checked">
+          <input type="radio" class="utility-input" name="active-project" id="project-accordion">
+          <input type="radio" class="utility-input" name="active-project" id="project-responsive-tabs">
+          <input type="radio" class="utility-input" name="active-project" id="project-multipage-website">
+          <input type="radio" class="utility-input" name="active-project" id="project-forms">
+          <input type="radio" class="utility-input" name="active-project" id="project-calculator">
+          <input type="radio" class="utility-input" name="active-project" id="project-product-listing">
+          <input type="radio" class="utility-input" name="active-project" id="project-questionnaire">
+          <input type="radio" class="utility-input" name="active-project" id="project-jigsaw-puzzle">
+          <input type="radio" class="utility-input" name="active-project" id="project-interactive-i-element">
+          <input type="radio" class="utility-input" name="active-project" id="project-interactive-attribute">
+          <input type="radio" class="utility-input" name="active-project" id="project-interactive-lastindexof">
+          <input type="radio" class="utility-input" name="active-project" id="project-bovacademy">
+          <input type="radio" class="utility-input" name="active-project" id="project-ui-framework">
+          <ul class="tab-toggles">
+            <li class="project-image-gallery"><label for="project-image-gallery">Image Gallery</label></li>
+            <li class="project-accordion"><label for="project-accordion">Accordion</label></li>
+            <li class="project-responsive-tabs"><label for="project-responsive-tabs">Tabs</label></li>
+            <li class="project-multipage-website"><label for="project-multipage-website">Multipage Website</label></li>
+            <li class="project-forms"><label for="project-forms">Forms</label></li>
+            <li class="project-calculator"><label for="project-calculator">Calculator</label></li>
+            <li class="project-product-listing"><label for="project-product-listing">Product Listing Page</label></li>
+            <li class="project-questionnaire"><label for="project-questionnaire">Questionnaire</label></li>
+            <li class="project-jigsaw-puzzle"><label for="project-jigsaw-puzzle">Jigsaw Puzzle</label></li>
+            <li class="project-interactive-i-element"><label for="project-interactive-i-element">Interactive &lt;i&gt; Example</label></li>
+            <li class="project-interactive-attribute"><label for="project-interactive-attribute">Interactive Attribute Selector Example</label></li>
+            <li class="project-interactive-lastindexof"><label for="project-interactive-lastindexof">Interactive lastIndexOf Example</label></li>
+            <li class="project-bovacademy"><label for="project-bovacademy">Bov Academy Website</label></li>
+            <li class="project-ui-framework"><label for="project-ui-framework">Seed UI Framework</label></li>
+          </ul>
+          <ul class="tab-contents">
+
+            <li class="project-image-gallery">
+              <label class="accordion-toggles" for="project-image-gallery">Simple Image Gallery</label>
+              <section class="carousel">
+                <input id="description-image-gallery" class="utility-input project-description-toggle" type="radio" name="image-gallery" checked="checked">
+                <input id="presentation-image-gallery" class="utility-input project-presentation-toggle" type="radio" name="image-gallery">
+                <input id="live-image-gallery" class="utility-input project-live-toggle" type="radio" name="image-gallery">
+                <header>
+                  <h3 class="project-name">Simple Image Gallery</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-image-gallery" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-image-gallery" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Simple Image Gallery Project Description</h3>
+                    <p>This image gallery is made without using JavaScript. It uses input radio fields to toggle active states for the images.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-image-gallery" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-image-gallery" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Simple Image Gallery Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-image-gallery" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-image-gallery" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-4/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-image-gallery">Image Gallery Description</label></li>
+                      <li><label for="presentation-image-gallery">Image Gallery Presentation</label></li>
+                      <li><label for="live-image-gallery">Image Gallery Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-4">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-4/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-accordion">
+              <label class="accordion-toggles" for="project-accordion">Accordion</label>
+              <section class="carousel">
+                <input id="description-accordion" class="utility-input project-description-toggle" type="radio" name="accordion" checked="checked">
+                <input id="presentation-accordion" class="utility-input project-presentation-toggle" type="radio" name="accordion">
+                <input id="live-accordion" class="utility-input project-live-toggle" type="radio" name="accordion">
+                <header>
+                  <h3 class="project-name">Accordion</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-accordion" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-accordion" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Accordion Project Description</h3>
+                    <p>This accordion is made without using JavaScript. It uses input radio fields to toggle active states for the accordion sections.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-accordion" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-accordion" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Accordion Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-accordion" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-accordion" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-2/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-accordion">Accordion Description</label></li>
+                      <li><label for="presentation-accordion">Accordion Presentation</label></li>
+                      <li><label for="live-accordion">Accordion Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-2">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-2/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-responsive-tabs">
+              <label class="accordion-toggles" for="project-responsive-tabs">Tabs</label>
+              <section class="carousel">
+                <input id="description-responsive-tabs" class="utility-input project-description-toggle" type="radio" name="responsive-tabs" checked="checked">
+                <input id="presentation-responsive-tabs" class="utility-input project-presentation-toggle" type="radio" name="responsive-tabs">
+                <input id="live-responsive-tabs" class="utility-input project-live-toggle" type="radio" name="responsive-tabs">
+                <header>
+                  <h3 class="project-name">Tabs</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-responsive-tabs" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-responsive-tabs" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Tabs Project Description</h3>
+                    <p>This tabs are made without using JavaScript. They use input radio fields to toggle active states for the tabs.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-responsive-tabs" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-responsive-tabs" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Responsive Tabs Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-responsive-tabs" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-responsive-tabs" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-1/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-responsive-tabs">Responsive Tabs Description</label></li>
+                      <li><label for="presentation-responsive-tabs">Responsive Tabs Presentation</label></li>
+                      <li><label for="live-responsive-tabs">Responsive Tabs Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-1">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-07-Mastering-JavaScript-and-Modern-Web-Development/Chapter-04-Mastering-CSS/project-1/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-multipage-website">
+              <label class="accordion-toggles" for="project-multipage-website">Multipage Website</label>
+              <section class="carousel">
+                <input id="description-multipage-website" class="utility-input project-description-toggle" type="radio" name="multipage-website" checked="checked">
+                <input id="presentation-multipage-website" class="utility-input project-presentation-toggle" type="radio" name="multipage-website">
+                <input id="live-multipage-website" class="utility-input project-live-toggle" type="radio" name="multipage-website">
+                <header>
+                  <h3 class="project-name">Multipage Website</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-multipage-website" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-multipage-website" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Multipage Website Project Description</h3>
+                    <p>This project was the first project that utilized multiple web pages. It's purpose was to showcase other projects that were done at that time.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-multipage-website" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-multipage-website" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Multipage Website Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-multipage-website" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-multipage-website" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://gruximillian.github.io/multi-page-website/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-multipage-website">Multipage Website Description</label></li>
+                      <li><label for="presentation-multipage-website">Multipage Website Presentation</label></li>
+                      <li><label for="live-multipage-website">Multipage Website Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/Gruximillian/multi-page-website">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://gruximillian.github.io/multi-page-website/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-forms">
+              <label class="accordion-toggles" for="project-forms">Forms</label>
+              <section class="carousel">
+                <input id="description-forms" class="utility-input project-description-toggle" type="radio" name="forms" checked="checked">
+                <input id="presentation-forms" class="utility-input project-presentation-toggle" type="radio" name="forms">
+                <input id="live-forms" class="utility-input project-live-toggle" type="radio" name="forms">
+                <header>
+                  <h3 class="project-name">Forms</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-forms" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-forms" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Forms Project Description</h3>
+                    <p>In this project I created many different types of forms.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-forms" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-forms" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Forms Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-forms" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-forms" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://gruximillian.github.io/md-forms/signup"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-forms">Forms Description</label></li>
+                      <li><label for="presentation-forms">Forms Presentation</label></li>
+                      <li><label for="live-forms">Forms Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/Gruximillian/md-forms">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://gruximillian.github.io/md-forms/signup">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-calculator">
+              <label class="accordion-toggles" for="project-calculator">Calculator</label>
+              <section class="carousel">
+                <input id="description-calculator" class="utility-input project-description-toggle" type="radio" name="calculator" checked="checked">
+                <input id="presentation-calculator" class="utility-input project-presentation-toggle" type="radio" name="calculator">
+                <input id="live-calculator" class="utility-input project-live-toggle" type="radio" name="calculator">
+                <header>
+                  <h3 class="project-name">Calculator</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-calculator" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-calculator" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Calculator Project Description</h3>
+                    <p>This was one fun project. Calculator has many features, but it can't be trusted completely. :D</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-calculator" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-calculator" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Calculator Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-calculator" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-calculator" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://gruximillian.github.io/calculator/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-calculator">Calculator Description</label></li>
+                      <li><label for="presentation-calculator">Calculator Presentation</label></li>
+                      <li><label for="live-calculator">Calculator Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/Gruximillian/calculator">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://gruximillian.github.io/calculator/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-product-listing">
+              <label class="accordion-toggles" for="project-product-listing">Product Listing Page</label>
+              <section class="carousel">
+                <input id="description-product-listing" class="utility-input project-description-toggle" type="radio" name="product-listing" checked="checked">
+                <input id="presentation-product-listing" class="utility-input project-presentation-toggle" type="radio" name="product-listing">
+                <input id="live-product-listing" class="utility-input project-live-toggle" type="radio" name="product-listing">
+                <header>
+                  <h3 class="project-name">Product Listing Page</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-product-listing" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-product-listing" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Product Listing Project Description</h3>
+                    <p>Don't like shopping, don't like product pages... except if those are drinks. ;)</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-product-listing" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-product-listing" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Product Listing Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-product-listing" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-product-listing" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://gruximillian.github.io/product-listing/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-product-listing">Product Listing Description</label></li>
+                      <li><label for="presentation-product-listing">Product Listing Presentation</label></li>
+                      <li><label for="live-product-listing">Product Listing Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/Gruximillian/product-listing">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://gruximillian.github.io/product-listing/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-questionnaire">
+              <label class="accordion-toggles" for="project-questionnaire">Questionnaire</label>
+              <section class="carousel">
+                <input id="description-questionnaire" class="utility-input project-description-toggle" type="radio" name="questionnaire" checked="checked">
+                <input id="presentation-questionnaire" class="utility-input project-presentation-toggle" type="radio" name="questionnaire">
+                <input id="live-questionnaire" class="utility-input project-live-toggle" type="radio" name="questionnaire">
+                <header>
+                  <h3 class="project-name">Questionnaire</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-questionnaire" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-questionnaire" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Questionnaire Project Description</h3>
+                    <p>The team project that I worked on with Jing Ran. It was a lot of fun to do.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-questionnaire" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-questionnaire" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Questionnaire Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-questionnaire" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-questionnaire" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-1-questionnaire-application/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-questionnaire">Questionnaire Description</label></li>
+                      <li><label for="presentation-questionnaire">Questionnaire Presentation</label></li>
+                      <li><label for="live-questionnaire">Questionnaire Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-1-questionnaire-application">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-1-questionnaire-application/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-jigsaw-puzzle">
+              <label class="accordion-toggles" for="project-jigsaw-puzzle">Jisgsaw Puzzle</label>
+              <section class="carousel">
+                <input id="description-jigsaw-puzzle" class="utility-input project-description-toggle" type="radio" name="jigsaw-puzzle" checked="checked">
+                <input id="presentation-jigsaw-puzzle" class="utility-input project-presentation-toggle" type="radio" name="jigsaw-puzzle">
+                <input id="live-jigsaw-puzzle" class="utility-input project-live-toggle" type="radio" name="jigsaw-puzzle">
+                <header>
+                  <h3 class="project-name">Jisgsaw Puzzle</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-jigsaw-puzzle" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-jigsaw-puzzle" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Jisgsaw Puzzle Project Description</h3>
+                    <p>This was the project I worked on in the December 2016 hackathon with two lovely ladies and on cool fellow. This project was a lot of fun.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-jigsaw-puzzle" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-jigsaw-puzzle" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Jisgsaw Puzzle Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-jigsaw-puzzle" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-jigsaw-puzzle" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://gruximillian.github.io/jighackasaw/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-jigsaw-puzzle">Jisgsaw Puzzle Description</label></li>
+                      <li><label for="presentation-jigsaw-puzzle">Jisgsaw Puzzle Presentation</label></li>
+                      <li><label for="live-jigsaw-puzzle">Jisgsaw Puzzle Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/Gruximillian/jighackasaw">GitHub Repository</a></div>
+                    <div class="live-page"><a href="https://gruximillian.github.io/jighackasaw/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-interactive-i-element">
+              <label class="accordion-toggles" for="project-interactive-i-element">Interactive &lt;i&gt; Example</label>
+              <section class="carousel">
+                <input id="description-interactive-i-element" class="utility-input project-description-toggle" type="radio" name="interactive-i-element" checked="checked">
+                <input id="presentation-interactive-i-element" class="utility-input project-presentation-toggle" type="radio" name="interactive-i-element">
+                <input id="live-interactive-i-element" class="utility-input project-live-toggle" type="radio" name="interactive-i-element">
+                <header>
+                  <h3 class="project-name">Interactive &lt;i&gt; Example</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-interactive-i-element" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-interactive-i-element" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Interactive &lt;i&gt; Example Project Description</h3>
+                    <p>Interesting exercise with text selection events.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-interactive-i-element" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-interactive-i-element" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Interactive &lt;i&gt; Example Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-interactive-i-element" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-interactive-i-element" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-1-interactive--%3Ci%3E-element/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-interactive-i-element">Interactive &lt;i&gt; Example Description</label></li>
+                      <li><label for="presentation-interactive-i-element">Interactive &lt;i&gt; Example Presentation</label></li>
+                      <li><label for="live-interactive-i-element">Interactive &lt;i&gt; Example Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-1-interactive--%3Ci%3E-element">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-1-interactive--%3Ci%3E-element/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-interactive-attribute">
+              <label class="accordion-toggles" for="project-interactive-attribute">Interactive Attribute Selector Example</label>
+              <section class="carousel">
+                <input id="description-interative-attribute" class="utility-input project-description-toggle" type="radio" name="interative-attribute" checked="checked">
+                <input id="presentation-interative-attribute" class="utility-input project-presentation-toggle" type="radio" name="interative-attribute">
+                <input id="live-interative-attribute" class="utility-input project-live-toggle" type="radio" name="interative-attribute">
+                <header>
+                  <h3 class="project-name">Interactive Attribute Selector Example</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-interative-attribute" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-interative-attribute" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Interactive Attribute Selector Project Description</h3>
+                    <p>Another fun exercise with CSS and JS.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-interative-attribute" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-interative-attribute" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Interactive Attribute Selector Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-interative-attribute" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-interative-attribute" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-2-interactive--[attribute*=value]/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-interative-attribute">Interactive Attribute Selector Description</label></li>
+                      <li><label for="presentation-interative-attribute">Interactive Attribute Selector Presentation</label></li>
+                      <li><label for="live-interative-attribute">Interactive Attribute Selector Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-2-interactive--%5Battribute*%3Dvalue%5D">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-2-interactive--[attribute*=value]/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-interactive-lastindexof">
+              <label class="accordion-toggles" for="project-interactive-lastindexof">Interactive 'lastIndexOf' Example</label>
+              <section class="carousel">
+                <input id="description-interactive-lastindexof" class="utility-input project-description-toggle" type="radio" name="interactive-lastindexof" checked="checked">
+                <input id="presentation-interactive-lastindexof" class="utility-input project-presentation-toggle" type="radio" name="interactive-lastindexof">
+                <input id="live-interactive-lastindexof" class="utility-input project-live-toggle" type="radio" name="interactive-lastindexof">
+                <header>
+                  <h3 class="project-name">Interactive 'lastIndexOf' Example</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-interactive-lastindexof" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-interactive-lastindexof" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Interactive 'lastIndexOf' Project Description</h3>
+                    <p>Again, JS party with CSS spice.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-interactive-lastindexof" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-interactive-lastindexof" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Interactive 'lastIndexOf' Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-interactive-lastindexof" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-interactive-lastindexof" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-3-interactive--Array.prototype.lastIndexOf()/"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-interactive-lastindexof">Interactive 'lastIndexOf' Description</label></li>
+                      <li><label for="presentation-interactive-lastindexof">Interactive 'lastIndexOf' Presentation</label></li>
+                      <li><label for="live-interactive-lastindexof">Interactive 'lastIndexOf' Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/moderndeveloper-students/coursework-Gruximillian/tree/gh-pages/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-3-interactive--Array.prototype.lastIndexOf()">GitHub Repository</a></div>
+                    <div class="live-page"><a href="http://moderndeveloper-students.github.io/coursework-Gruximillian/Course-06-Introduction-to-JavaScript-and-Modern-Web-Development/Chapter-02-Introduction-to-CSS/team-project-3-interactive-examples-for-encyclopedia-entries/entry-3-interactive--Array.prototype.lastIndexOf()/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-bovacademy">
+              <label class="accordion-toggles" for="project-bovacademy">Bov Academy Website</label>
+              <section class="carousel">
+                <input id="description-bovacademy" class="utility-input project-description-toggle" type="radio" name="bovacademy" checked="checked">
+                <input id="presentation-bovacademy" class="utility-input project-presentation-toggle" type="radio" name="bovacademy">
+                <input id="live-bovacademy" class="utility-input project-live-toggle" type="radio" name="bovacademy">
+                <header>
+                  <h3 class="project-name">Bov Academy Website</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-bovacademy" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-bovacademy" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Bov Academy Website Project Description</h3>
+                    <p>This is by far the biggest and the most complex project I have worked on, and I am still working on it. I am working on the frontend for Bov Academy website, and I made almost all of the frontend for the website. I have learned so much while creating this website.</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-bovacademy" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-bovacademy" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Bov Academy Website Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-bovacademy" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-bovacademy" class="arrow-nav next material-icons">chevron_right</label>
+                    <iframe src="https://bovacademy.com"></iframe>
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-bovacademy">Bov Academy Website Description</label></li>
+                      <li><label for="presentation-bovacademy">Bov Academy Website Presentation</label></li>
+                      <li><label for="live-bovacademy">Bov Academy Website Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <!-- <div class="repository"><a href="https://github.com/">GitHub Repository</a></div> -->
+                    <div class="live-page"><a href="https://bovacademy.com">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+            <li class="project-ui-framework">
+              <label class="accordion-toggles" for="project-ui-framework">Seed UI Framework</label>
+              <section class="carousel">
+                <input id="description-ui-framework" class="utility-input project-description-toggle" type="radio" name="ui-framework" checked="checked">
+                <input id="presentation-ui-framework" class="utility-input project-presentation-toggle" type="radio" name="ui-framework">
+                <input id="live-ui-framework" class="utility-input project-live-toggle" type="radio" name="ui-framework">
+                <header>
+                  <h3 class="project-name">Seed UI Framework</h3>
+                </header>
+                <div class="carousel-content">
+                  <div class="project-description">
+                    <label for="live-ui-framework" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="presentation-ui-framework" class="arrow-nav next material-icons">chevron_right</label>
+                    <h3>Seed UI Framework Description</h3>
+                    <p>This was the project I worked on in the February 2017 hackathon with an awesome team of students. We have created many UI elements, and every one of us has created one innovative UI element. My innovative UI element is called Eyelids. ;)</p>
+                  </div>
+                  <div class="project-presentation">
+                    <label for="description-ui-framework" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="live-ui-framework" class="arrow-nav next material-icons">chevron_right</label>
+                    <img src="" alt="The image that presents the Seed UI Framework Project">
+                  </div>
+                  <div class="project-live">
+                    <label for="presentation-ui-framework" class="arrow-nav prev material-icons">chevron_left</label>
+                    <label for="description-ui-framework" class="arrow-nav next material-icons">chevron_right</label>
+                    <!-- <iframe src="https://codephobe.github.io/seed-ui/"></iframe> --> <!-- to large to load, makes portfolio load too slow -->
+                  </div>
+                </div>
+                <footer>
+                  <div class="dot-nav">
+                    <ul>
+                      <li><label for="description-ui-framework">Seed UI Framework Description</label></li>
+                      <li><label for="presentation-ui-framework">Seed UI Framework Presentation</label></li>
+                      <li><label for="live-ui-framework">Seed UI Framework Live Site</label></li>
+                    </ul>
+                  </div>
+                  <div class="project-links">
+                    <div class="repository"><a href="https://github.com/codephobe/seed-ui/">GitHub Repository</a></div>
+                    <div class="live-page"><a href="https://codephobe.github.io/seed-ui/">Live Page</a></div>
+                  </div>
+                </footer>
+              </section>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <blockquote id="skills" class="section-break text-center">
+      <strong>&quot;Closed eyes view the world differently.&quot;<br></strong>
+      — from the song <a href="https://youtu.be/IWYYmEczm2A">&quot;Majdan&quot;</a> by the Serbian band Block Out
+    </blockquote>
+
+    <section class="section skills">
+      <div class="content">
+        <h2>Skills</h2>
+        <p>In this section I will try to estimate my skills. But, that is just that, an estimate, not an precise and objective measure of my skills.</p>
+        <div class="skill-graphs clearfix">
+          <div class="skill-graph-horizontal-labels clearfix">
+            <span>Frontend</span>
+            <span>Backend</span>
+          </div>
+          <div class="skill-graph-horizontal"></div>
+          <div class="skill-bars skill-frontend">
+            <h3>Frontend Technologies</h3>
+            <div class="graph-container">
+              <div class="y-axis">
+                <ul class="proficiency-levels-tags">
+                  <li class="expert">Expert</li>
+                  <li class="proficient">Proficient</li>
+                  <li class="competent">Competent</li>
+                  <li class="learning">Learning</li>
+                </ul>
+                <ul class="proficiency-levels">
+                  <li class="html" data-level="proficient" data-info="Proficient: I am able to create almost any HTML and CSS layout and effect."></li>
+                  <li class="css" data-level="proficient" data-info="Proficient: I am able to create almost any HTML and CSS layout and effect."></li>
+                  <li class="javasript" data-level="competent" data-info="Competent: While I still have a lot more to learn, I am capable to solve almost any problem the requires JavaScript programming."></li>
+                  <li class="jquery" data-level="competent" data-info="Competent: I am not very practiced in jQuery, but still, I feel comfortable using it, and with consulting their documentation I can solve almost anything that requires jQuery."></li>
+                  <li class="sass" data-level="competent" data-info="Competent: I am still learning SASS, but I am picking it up quickly."></li>
+                </ul>
+              </div>
+              <div class="x-axis clearfix">
+                <ul class="topics">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>SASS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bars skill-backend">
+            <h3>Backend Technologies</h3>
+            <div class="graph-container">
+              <div class="y-axis">
+                <ul class="proficiency-levels-tags">
+                  <li class="expert">Expert</li>
+                  <li class="proficient">Proficient</li>
+                  <li class="competent">Competent</li>
+                  <li class="learning">Learning</li>
+                </ul>
+                <ul class="proficiency-levels">
+                  <li class="cmd" data-level="competent" data-info="Competent: I know my way through command line. I am far from expert, but with some documentation I can do many things."></li>
+                  <li class="php" data-level="competent" data-info="Competent: I have worked with PHP, and it went pretty good. I would need a reminder now though."></li>
+                  <li class="mysql" data-level="learning" data-info="Learning: I know very basic stuff about MySQL."></li>
+                  <li class="mongodb" data-level="learning" data-info="Learning: I have used MongodDB while working with Meteor. I get the basics."></li>
+                  <li class="node" data-level="learning" data-info="Learning: Never worked much with Node.js, but I used it at a basic level."></li>
+                </ul>
+              </div>
+              <div class="x-axis clearfix">
+                <ul class="topics">
+                  <li>Command<br>line</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Node.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bars skill-other">
+            <h3>Other Skills</h3>
+            <div class="graph-container">
+              <div class="y-axis">
+                <ul class="proficiency-levels-tags">
+                  <li class="expert">Expert</li>
+                  <li class="proficient">Proficient</li>
+                  <li class="competent">Competent</li>
+                  <li class="learning">Learning</li>
+                </ul>
+                <ul class="proficiency-levels">
+                  <li class="git" data-level="competent" data-info="Competent: Git doesn't bite me anymore. I even help others who GIT bitten. :)"></li>
+                  <li class="speaking" data-level="expert" data-info="Expert: After ten years of working as a physics teacher at school, I am very capable public speaker."></li>
+                  <li class="problem-solving" data-level="proficient" data-info="Proficient: No problem is safe with me, rare are the ones that I have left alone and didn't solve."></li>
+                  <li class="communication" data-level="proficient" data-info="Proficient: I am able to express myself pretty good about the topics that I understand, and try to clearly formulate what I don't."></li>
+                  <li class="research" data-level="competent" data-info="Competent: I can find what I need, but I could use some more practice in this area."></li>
+                </ul>
+              </div>
+              <div class="x-axis clearfix">
+                <ul class="topics">
+                  <li>GIT</li>
+                  <li>Public<br>speaking</li>
+                  <li>Problem<br>solving</li>
+                  <li>Communication</li>
+                  <li>Research</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <blockquote id="contact" class="section-break text-center">
+      <strong>&quot;When you die, you are not aware of it, and it is not hard for you. It's hard for other people. The same is when you're stupid.&quot;<br></strong>
+      — serbian actor Zoran Radmilović
+    </blockquote>
+
+    <section class="section contact clearfix">
+      <div class="content">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch with me,<br>check out my details on my business card.</p>
+
+        <div class="business-card clear">
+          <input class="flipped" type="checkbox" name="flip-check" id="flip">
+
+          <div class="card">
+
+            <div class="flip-card-front">
+              <img src="business_card/bg2.png">
+              <div class="card-content">
+                <span class="name pull-left">Vojislav Grujić</span>
+                <label title="Click here to see the other side" class="flip-label text-center" for="flip"><img src="business_card/flip.png"></label>
+                <p class="career clear">Advanced Frontend Developer, first Cohort</p>
+                <p class="about">Vojislav is an astrophysicist with a great passion in web development. He is currently on his way to making great web development deeds.</p>
+                <div class="links clearfix">
+                  <div class="pull-left">
+                    <p class="email"><a href="mailto:vojislav.grujic@gmail.com">vojislav.grujic@gmail.com</a></p>
+                  </div>
+                  <div class="social-icons github pull-right"><a href="https://github.com/Gruximillian" target="_blank">GitHub</a></div>
+                  <div class="social-icons twitter pull-right"><a href="https://twitter.com/Gruximillian" target="_blank">Twitter</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card-back">
+              <img src="business_card/bg_back.png">
+              <div class="card-content">
+                <span class="name pull-left">Vojislav Grujić</span>
+                <label class="flip-label text-center" for="flip"><img src="business_card/flip.png"></label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <p>BTW, this business card is also one of the projects that I worked on during the studies at Bov Academy. It is also made only with HTML and CSS.</p>
+
+      </div>
+    </section>
+
+    <blockquote id="contact" class="section-break text-center">
+      <strong>&quot;Fake it, 'till you make it!!&quot;<br></strong>
+      — common advice for the new and self-doubting programmers
+    </blockquote>
+
+    <!-- HEADER SECTION -->
+
+    <!-- This is a header section, it is after the main content of the document   -->
+    <!-- because of the usage of the ':target' CSS pseudo class to style the menu -->
+    <!-- items and to be able to scroll to the proper section of the document     -->
+
+    <span class="header-line"></span>
+    <input type="checkbox" class="utility-input" id="menu-switch">
+
+    <header class="header">
+      <span class="developer name">Vojislav Grujić</span>
+      <span class="developer initials">VG</span>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <form>
+          <label for="search-disabled">
+            <span class="submit-search material-icons">search</span>
+          </label>
+          <div class="search-field">
+            <input type="text" name="search" id="search">
+            <label for="search">Search</label>
+          </div>
+        </form>
+      </div>
+      <span class="menu-toggle">
+        <label for="menu-switch">
+          <span class="icon icon-menu material-icons">menu</span>
+          <span class="icon icon-close material-icons">close</span>
+        </label>
+      </span>
+    </header>
+
+    <!-- END OF HEADER SECTION -->
+
+    <footer class="footer text-center">
+      <p>It's not a bug, it's a FOOTER!</p>
+      <p class="author-copyright">&copy; Vojislav Grujić - 2017</p>
+      <div class="tool-eye">
+        <!-- HAVE FUN -->
+        <label class="shock" for="shock"></label>
+        <input id="shock" class="utility-input" type="checkbox" name="shock">
+        <label for="shock">
+          <img class="shock" src="img/VG.jpg">
+        </label>
+      </div>
+    </footer>
+
+  </div>
+
+<!-- Iframes must have 'data-src' attributes with the link to the page
+
+  <iframe data-src="https://bovacademy.com"></iframe>
+  <script type="text/javascript">
+    var iframeTriggers = document.querySelectorAll('label[for*="project-"]'),
+        i, len = iframeTriggers.length;
+
+    function loadIframe() {
+      var iframeClass = this.getAttribute('for'),
+          iframe = document.querySelector('li.' + iframeClass + ' iframe');
+      iframe.setAttribute('src', iframe.dataset.src);
+    }
+
+    for ( i = 0; i < len; i++ ) {
+      iframeTriggers[i].addEventListener('mouseover', loadIframe);
+    }
+  </script> -->
+
+</body>
+</html>
