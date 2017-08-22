@@ -1,0 +1,201 @@
+.section.contact {
+  &::before {
+    background-attachment: fixed;
+    background-image: url(../img/contact-2.jpg);
+    background-size: auto 100vh;
+    @media (min-width: 750px) {
+      background-size: cover;
+    }
+  }
+  .content {
+    width: 100%;
+    > h2,
+    > p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 750px) {
+  .contact .content::before {
+    background-color: #fff;
+    left: 0;
+    opacity: 0.2;
+    right: 0;
+    -webkit-transition: opacity 0.5s ease-in-out 0.3s;
+            transition: opacity 0.5s ease-in-out 0.3s;
+  }
+  .contact:hover .content::before {
+    opacity: 0.7;
+  }
+}
+.business-card {
+  font-size: 12px;
+  @media(min-width: 450px) {
+    font-size: 16px;
+  }
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #000;
+  color: #ccc;
+  font-family: "Gruppo", sans-serif;
+  margin: 50px auto;
+  max-width: 450px;
+  min-width: 300px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+          transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+          transition: transform 0.6s ease 0s, opacity 0.6s ease 0s;
+          transition: transform 0.6s ease 0s, opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+  width: 100%;
+}
+.card-side--front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 1;
+  position: relative;
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+          transform: rotate3d(1, 0, 0, 0deg);
+  -webkit-transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+          transition: opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+          transition: transform 0.6s ease 0s, opacity 0.6s ease 0s;
+          transition: transform 0.6s ease 0s, opacity 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+}
+.card-side--back {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.6s ease 0s, opacity 0.6s ease 0s;
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+          transform: rotate3d(1, 0, 0, 180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+/* Flipped card state */
+.business-card__flip:checked + .card {
+  box-shadow: 0 -2px 5px 0 #000;
+  -webkit-transform: perspective(500px) rotate3d(1, 0, 0, 180deg);
+          transform: perspective(500px) rotate3d(1, 0, 0, 180deg);
+}
+/*opacity and backface-visibility need to be changed to make it work in IE11 */
+.business-card__flip:checked + .card .card-side--front {
+  opacity: 0;
+}
+.business-card__flip:checked + .card .card-side--back {
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  opacity: 1;
+}
+.background {
+  border-radius: 5px;
+  vertical-align: middle;
+  width: 100%;
+}
+.card-content {
+  height: 100%;
+  padding: 15px 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-shadow: 0 0 0 #fff;
+  @media(min-width: 360px) {
+    padding: 20px 20px;
+  }
+}
+.title__name {
+  color: #fff;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.2em;
+  &--back {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    bottom: 20px;
+    padding: 5px 10px;
+    position: absolute;
+  }
+}
+.title__career {
+  margin-top: 0;
+}
+.flip-toggle {
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 5px 0;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 15%;
+  @media(min-width: 400px) {
+    right: 5px;
+  }
+  &:hover {
+    background-color:  rgba(255, 255, 255, 0.1);
+  }
+  &__button {
+    width: 50%;
+  }
+}
+.card-about {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+  @media(min-width: 400px) {
+    padding-top: 20px;
+  }
+}
+.contact-info {
+  bottom: 0;
+  left: 0;
+  padding: 0 20px 15px;
+  position: absolute;
+  width: 100%;
+  @media(min-width: 360px) {
+    padding: 0 20px 20px;
+  }
+  @media(min-width: 400px) {
+    padding: 0 20px 30px;
+  }
+}
+.contact-info__email {
+  color: #9a6ef5;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+}
+.contact-info__social {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  color: transparent;
+  height: 30px;
+  margin-left: 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 30px;
+  &:hover {
+    opacity: 1;
+  }
+  &--twitter {
+    background-image: url(../img/business_card/twitter.png);
+  }
+  &--github {
+    background-image: url(../img/business_card/github2.png);
+  }
+}
+.social-link {
+  display: block;
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+}

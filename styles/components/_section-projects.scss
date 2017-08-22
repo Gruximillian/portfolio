@@ -1,0 +1,419 @@
+.section.projects {
+  min-height: calc(100vh - 80px);
+  &::before {
+    background-attachment: fixed;
+    background-image: url(../img/by_the_river.jpg);
+    background-position: 20% center;
+    background-size: cover;
+    @media (min-width: 750px) {
+      right: 0;
+    }
+  }
+  @media (min-width: 750px) {
+    .content::before {
+      background-image: -webkit-linear-gradient(250deg, #fff 20%, transparent 40%);
+      background-image: linear-gradient(200deg, #fff 20%, transparent 40%);
+      left: 0;
+      right: 0;
+    }
+    .content {
+      min-height: calc(100vh - 80px);
+      &:hover::before {
+        left: -150%;
+      }
+    }
+  }
+}
+#projects-container--open:checked + .projects-container {
+  -webkit-animation: goNuts 0.7s ease-in-out 0s forwards;
+          animation: goNuts 0.7s ease-in-out 0s forwards;
+  opacity: 1;
+  z-index: 500;
+}
+.projects-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: calc(100vh - 80px);
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+  z-index: -1;
+  .icon-close {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    &:hover {
+      color: rgba(255, 165, 0, 1);
+    }
+  }
+  .project-tabs {
+    background-color: #999;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+    -webkit-transition: width 0.3s ease-in-out 0.8s,
+                        background-color 0.7s ease-in-out 1.5s;
+            transition: width 0.3s ease-in-out 0.8s,
+                        background-color 0.7s ease-in-out 1.5s;
+    width: 0;
+    @media (min-width: 900px) {
+      margin: 0 auto;
+      max-width: 1400px;
+      overflow: hidden;
+    }
+  }
+}
+.tab-toggles,
+.tab-contents {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out 1.8s;
+          transition: opacity 0.3s ease-in-out 1.8s;
+}
+.tab-toggles {
+  display: none;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @media (min-width: 900px) {
+    display: block;
+    float: left;
+    left: 1px; /* overlap the border of the project display element */
+    position: relative;
+    width: 30%;
+  }
+}
+.tab-toggles label,
+.accordion-toggles {
+  background-color: #000;
+  border: 1px solid transparent;
+  color: rgba(255, 165, 0, 0.5);
+  cursor: pointer;
+  display: block;
+  font-size: 1.2em;
+  line-height: 40px;
+  min-height: 40px;
+  text-align: center;
+  &:hover,
+  &:hover {
+    color: rgba(255, 165, 0, 1);
+  }
+}
+@media (min-width: 900px) {
+  .accordion-toggles {
+    display: none;
+  }
+}
+#projects-container--open:checked ~ .projects-container .tab-toggles,
+#projects-container--open:checked ~ .projects-container .tab-contents {
+  opacity: 1;
+}
+#projects-container--open:checked + .projects-container .project-tabs {
+  background-color: transparent;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+.carousel header {
+  background-color: #000;
+  color: rgba(255, 165, 0, 1);
+  display: none;
+  height: 40px;
+  line-height: 40px;
+  @media (min-width: 900px) {
+    display: block;
+  }
+  h3 {
+    margin: 0;
+    text-align: center;
+  }
+}
+iframe {
+  border: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  /* hide scrollbar hack */
+  /*width: calc(100% + 15px);*/
+  /*right: -15px;*/
+}
+.tab-contents .carousel {
+  background-color: #999;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-in-out 0s;
+          transition: height 0.5s ease-in-out 0s;
+  footer {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.7);
+    height: 80px;
+    padding: 10px;
+    > div {
+      height: 50%;
+      line-height: 30px;
+    }
+  }
+  .dot-nav {
+    text-align: center;
+    ul {
+      display: inline-block;
+    }
+    li {
+      background-color: rgba(255, 165, 0, 0.3);
+      border-radius: 50%;
+      float: left;
+      font-size: 0;
+      height: 15px;
+      margin: 0 5px;
+      overflow: hidden;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+              transition: all 0.3s ease-in-out 0s;
+      width: 15px;
+      label {
+        display: block;
+        &:hover {
+          background-color: rgba(255, 165, 0, 1);
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .carousel-content {
+    height: calc(100% - 80px);
+    position: relative;
+    width: 95%;
+    @media (min-width: 900px) {
+      height: calc(100% - 120px);
+      width: 100%;
+    }
+    > div {
+      height: 100%;
+      opacity: 0;
+      padding: 15px 30px;
+      position: absolute;
+      width: 100%;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+              transition: all 0.5s ease-in-out 0s;
+      z-index: 1;
+      /*transform: translate3d(100%, 0, 0);*/
+    }
+    .arrow-nav {
+      cursor: pointer;
+      font-size: 30px;
+      height: 50px;
+      line-height: 50px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+              transition: all 0.2s ease-in-out 0s;
+      width: 30px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: rgba(255, 165, 0, 1);
+      }
+      &.prev {
+        left: 0;
+      }
+      &.next {
+        right: 0;
+      }
+    }
+  }
+  .project-links > div {
+    display: inline-block;
+    margin: 0 10px;
+    a {
+      display: block;
+      font-size: 0.7em;
+      outline: none;
+      &:hover {
+        color: rgba(255, 165, 0, 1);
+      }
+      &:active {
+        color: maroon;
+      }
+      @media (min-width: 360px) {
+        font-size: 1em;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .tab-contents {
+    border-left: 1px dotted #444;
+    float: right;
+    height: calc(100% - 1px);
+    position: relative;
+    width: 70%;
+    > li {
+      background-color: #000;
+      height: 100%;
+      padding: 0 25px;
+      position: absolute;
+      width: 100%;
+      z-index: -5;
+    }
+    .carousel {
+      height: 100% !important;
+      opacity: 0;
+      -webkit-transition: all 0.6s ease-in-out 0.1s;
+              transition: all 0.6s ease-in-out 0.1s;
+      z-index: -1;
+    }
+  }
+}
+/*  TRY TO MAKE SLIDE TRANSITION  */
+.project-description-toggle:checked ~ .carousel-content .project-description,
+.project-presentation-toggle:checked ~ .carousel-content .project-presentation,
+.project-live-toggle:checked ~ .carousel-content .project-live {
+  opacity: 1;
+  /*transform: translate3d(0, 0, 0);*/
+  z-index: 10;
+}
+.project-description-toggle:checked ~ footer .dot-nav label[for*="description-"],
+.project-presentation-toggle:checked ~ footer .dot-nav label[for*="presentation-"],
+.project-live-toggle:checked ~ footer .dot-nav label[for*="live-"] {
+  background-color: rgba(255, 165, 0, 1);
+}
+.tab-toggles li label:hover,
+.tab-contents li label:hover {
+  border-bottom: 1px dotted #444;
+  border-top: 1px dotted #444;
+}
+
+// It is questionable if the following loop is smart move since SASS compiles the rules separately instead of grouping them together as they were in normal CSS
+// Resulting CSS file is larger if I use this loop
+
+// $projects: 'image-gallery', 'accordion', 'responsive-tabs', 'multipage-website', 'forms', 'calculator', 'product-listing', 'questionnaire', 'jigsaw-puzzle', 'interactive-i-element', 'interactive-attribute', 'interactive-lastindexof', 'bovacademy', 'ui-framework';
+// @each $project in $projects {
+//   #project-#{$project}:checked ~ .tab-toggles li.project-#{$project} label {
+//       background-color: #000;
+//       border-bottom: 1px dotted #444;
+//       border-top: 1px dotted #444;
+//       color: rgba(255, 165, 0, 1);
+//       font-weight: bold;
+//       position: relative;
+//       z-index: 100;
+//   }
+//   #project-#{$project}:checked ~ .tab-contents li.project-#{$project} {
+//     border-bottom: 1px dotted #444;
+//     border-top: 1px dotted #444;
+//   }
+//   #project-#{$project}:checked ~ .tab-contents li.project-#{$project} .accordion-toggles {
+//     background-color: #000;
+//     color: rgba(255, 165, 0, 1);
+//     font-weight: bold;
+//   }
+//   #project-#{$project}:checked ~ .tab-contents li.project-#{$project} .carousel {
+//     height: 600px;
+//     z-index: 500;
+//   }
+//   @media (min-width: 900px) {
+//     #project-#{$project}:checked ~ .tab-contents li.project-#{$project} {
+//       position: relative;
+//       z-index: 5000;
+//     }
+//     #project-#{$project}:checked ~ .tab-contents li.project-#{$project} .carousel {
+//       opacity: 1;
+//       z-index: 100;
+//     }
+//   }
+// }
+
+#project-image-gallery:checked ~ .tab-toggles li.project-image-gallery label,
+#project-accordion:checked ~ .tab-toggles li.project-accordion label,
+#project-responsive-tabs:checked ~ .tab-toggles li.project-responsive-tabs label,
+#project-multipage-website:checked ~ .tab-toggles li.project-multipage-website label,
+#project-forms:checked ~ .tab-toggles li.project-forms label,
+#project-calculator:checked ~ .tab-toggles li.project-calculator label,
+#project-product-listing:checked ~ .tab-toggles li.project-product-listing label,
+#project-questionnaire:checked ~ .tab-toggles li.project-questionnaire label,
+#project-jigsaw-puzzle:checked ~ .tab-toggles li.project-jigsaw-puzzle label,
+#project-interactive-i-element:checked ~ .tab-toggles li.project-interactive-i-element label,
+#project-interactive-attribute:checked ~ .tab-toggles li.project-interactive-attribute label,
+#project-interactive-lastindexof:checked ~ .tab-toggles li.project-interactive-lastindexof label,
+#project-bovacademy:checked ~ .tab-toggles li.project-bovacademy label,
+#project-ui-framework:checked ~ .tab-toggles li.project-ui-framework label {
+  background-color: #000;
+  border-bottom: 1px dotted #444;
+  border-top: 1px dotted #444;
+  color: rgba(255, 165, 0, 1);
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+}
+
+
+#project-image-gallery:checked ~ .tab-contents li.project-image-gallery,
+#project-accordion:checked ~ .tab-contents li.project-accordion,
+#project-responsive-tabs:checked ~ .tab-contents li.project-responsive-tabs,
+#project-multipage-website:checked ~ .tab-contents li.project-multipage-website,
+#project-forms:checked ~ .tab-contents li.project-forms,
+#project-calculator:checked ~ .tab-contents li.project-calculator,
+#project-product-listing:checked ~ .tab-contents li.project-product-listing,
+#project-questionnaire:checked ~ .tab-contents li.project-questionnaire,
+#project-jigsaw-puzzle:checked ~ .tab-contents li.project-jigsaw-puzzle,
+#project-interactive-i-element:checked ~ .tab-contents li.project-interactive-i-element,
+#project-interactive-attribute:checked ~ .tab-contents li.project-interactive-attribute,
+#project-interactive-lastindexof:checked ~ .tab-contents li.project-interactive-lastindexof,
+#project-bovacademy:checked ~ .tab-contents li.project-bovacademy,
+#project-ui-framework:checked ~ .tab-contents li.project-ui-framework {
+  border-bottom: 1px dotted #444;
+  border-top: 1px dotted #444;
+  @media(min-width: 900px) {
+    position: relative;
+    z-index: 5000;
+  }
+}
+
+#project-image-gallery:checked ~ .tab-contents li.project-image-gallery .accordion-toggles,
+#project-accordion:checked ~ .tab-contents li.project-accordion .accordion-toggles,
+#project-responsive-tabs:checked ~ .tab-contents li.project-responsive-tabs .accordion-toggles,
+#project-multipage-website:checked ~ .tab-contents li.project-multipage-website .accordion-toggles,
+#project-forms:checked ~ .tab-contents li.project-forms .accordion-toggles,
+#project-calculator:checked ~ .tab-contents li.project-calculator .accordion-toggles,
+#project-product-listing:checked ~ .tab-contents li.project-product-listing .accordion-toggles,
+#project-questionnaire:checked ~ .tab-contents li.project-questionnaire .accordion-toggles,
+#project-jigsaw-puzzle:checked ~ .tab-contents li.project-jigsaw-puzzle .accordion-toggles,
+#project-interactive-i-element:checked ~ .tab-contents li.project-interactive-i-element .accordion-toggles,
+#project-interactive-attribute:checked ~ .tab-contents li.project-interactive-attribute .accordion-toggles,
+#project-interactive-lastindexof:checked ~ .tab-contents li.project-interactive-lastindexof .accordion-toggles,
+#project-bovacademy:checked ~ .tab-contents li.project-bovacademy .accordion-toggles,
+#project-ui-framework:checked ~ .tab-contents li.project-ui-framework .accordion-toggles {
+  background-color: #000;
+  color: rgba(255, 165, 0, 1);
+  font-weight: bold;
+}
+
+#project-image-gallery:checked ~ .tab-contents li.project-image-gallery .carousel,
+#project-accordion:checked ~ .tab-contents li.project-accordion .carousel,
+#project-responsive-tabs:checked ~ .tab-contents li.project-responsive-tabs .carousel,
+#project-multipage-website:checked ~ .tab-contents li.project-multipage-website .carousel,
+#project-forms:checked ~ .tab-contents li.project-forms .carousel,
+#project-calculator:checked ~ .tab-contents li.project-calculator .carousel,
+#project-product-listing:checked ~ .tab-contents li.project-product-listing .carousel,
+#project-questionnaire:checked ~ .tab-contents li.project-questionnaire .carousel,
+#project-jigsaw-puzzle:checked ~ .tab-contents li.project-jigsaw-puzzle .carousel,
+#project-interactive-i-element:checked ~ .tab-contents li.project-interactive-i-element .carousel,
+#project-interactive-attribute:checked ~ .tab-contents li.project-interactive-attribute .carousel,
+#project-interactive-lastindexof:checked ~ .tab-contents li.project-interactive-lastindexof .carousel,
+#project-bovacademy:checked ~ .tab-contents li.project-bovacademy .carousel,
+#project-ui-framework:checked ~ .tab-contents li.project-ui-framework .carousel {
+  height: 600px;
+  z-index: 500;
+  @media(min-width: 900px) {
+    opacity: 1;
+    z-index: 100;
+  }
+}

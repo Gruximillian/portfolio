@@ -1,0 +1,34 @@
+// Import from 'abstracts'
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// Import from 'vendors'
+
+// Import from 'base'
+@import 'base/reset';
+@import 'base/utilities';
+@import 'base/typography';
+@import 'base/animations';
+
+// Import from 'abstracts'
+@import 'abstracts/placeholders';
+
+// Import from 'layout'
+@import 'layout/header';
+@import 'layout/footer';
+
+// Import from 'components'
+@import 'components/buttons';
+@import 'components/navigation';
+@import 'components/search';
+@import 'components/section';
+@import 'components/section-about';
+@import 'components/section-projects';
+@import 'components/section-skills';
+@import 'components/section-contact';
+
+// Import from 'pages'
+@import 'pages/index';
+
+// Import from 'themes'

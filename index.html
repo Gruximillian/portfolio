@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Audiowide|Gruppo:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <title>Portfolio - Vojislav Grujić</title>
 </head>
 <body>
 
-  <input class="utility-input" type="checkbox" id="search-disabled">
-  <div class="modal search-disabled">
+  <input class="u-input" type="checkbox" id="search-disabled">
+  <div class="search-disabled">
     <label for="search-disabled"><span class="material-icons">close</span></label>
     <p>No can do for now!</p>
   </div>
@@ -25,7 +25,7 @@
     </div>
 
     <section id="about" class="section about">
-      <div class="content clear">
+      <div class="content u-clear">
         <h2>About Me</h2>
         <p>Welcome!<br>
           I am Vojislav and this is my portfolio website.
@@ -52,67 +52,95 @@
       </div>
     </section>
 
-    <blockquote id="projects" class="section-break text-center">
+    <blockquote id="projects" class="section-break u-text-center">
       <strong>&quot;Man cannot discover new oceans unless he has the courage to lose sight of the shore.&quot;<br></strong>
       — André Gide
     </blockquote>
 
-    <section class="section projects clearfix">
-      <div class="content pull-right">
-        <h2 class="text-right">Projects</h2>
+    <section class="section projects u-clearfix">
+      <div class="content u-pull-right">
+        <h2 class="u-text-right">Projects</h2>
         <p>In this section you can see the projects that I have done so far. Most of them are done as the student assignments at <a href="http://bovacademy.com" target="_blank">Bov Academy</a>.</p>
         <p>As mentioned in the &quot;About&quot; section, this website does not use JavaScript, but some of the projects displayed in this section do.</p>
         <p>
-          <label class="clearfix" for="projects-container-open">
-            <span class="pull-right button">Show me the stuff!</span>
+          <label class="u-clearfix" for="projects-container--open">
+            <span class="u-pull-right button">Show me the stuff!</span>
           </label>
         </p>
       </div>
 
-      <input class="utility-input" type="checkbox" id="projects-container-open" name="projects-container">
+      <input class="u-input" type="checkbox" id="projects-container--open" name="projects-container">
       <div class="projects-container">
-        <label for="projects-container-open">
+        <label for="projects-container--open">
           <span class="icon icon-close material-icons">close</span>
         </label>
         <div class="project-tabs">
-          <input type="radio" class="utility-input" name="active-project" id="project-image-gallery" checked="checked">
-          <input type="radio" class="utility-input" name="active-project" id="project-accordion">
-          <input type="radio" class="utility-input" name="active-project" id="project-responsive-tabs">
-          <input type="radio" class="utility-input" name="active-project" id="project-multipage-website">
-          <input type="radio" class="utility-input" name="active-project" id="project-forms">
-          <input type="radio" class="utility-input" name="active-project" id="project-calculator">
-          <input type="radio" class="utility-input" name="active-project" id="project-product-listing">
-          <input type="radio" class="utility-input" name="active-project" id="project-questionnaire">
-          <input type="radio" class="utility-input" name="active-project" id="project-jigsaw-puzzle">
-          <input type="radio" class="utility-input" name="active-project" id="project-interactive-i-element">
-          <input type="radio" class="utility-input" name="active-project" id="project-interactive-attribute">
-          <input type="radio" class="utility-input" name="active-project" id="project-interactive-lastindexof">
-          <input type="radio" class="utility-input" name="active-project" id="project-bovacademy">
-          <input type="radio" class="utility-input" name="active-project" id="project-ui-framework">
+          <input type="radio" class="u-input" name="active-project" id="project-image-gallery" checked="checked">
+          <input type="radio" class="u-input" name="active-project" id="project-accordion">
+          <input type="radio" class="u-input" name="active-project" id="project-responsive-tabs">
+          <input type="radio" class="u-input" name="active-project" id="project-multipage-website">
+          <input type="radio" class="u-input" name="active-project" id="project-forms">
+          <input type="radio" class="u-input" name="active-project" id="project-calculator">
+          <input type="radio" class="u-input" name="active-project" id="project-product-listing">
+          <input type="radio" class="u-input" name="active-project" id="project-questionnaire">
+          <input type="radio" class="u-input" name="active-project" id="project-jigsaw-puzzle">
+          <input type="radio" class="u-input" name="active-project" id="project-interactive-i-element">
+          <input type="radio" class="u-input" name="active-project" id="project-interactive-attribute">
+          <input type="radio" class="u-input" name="active-project" id="project-interactive-lastindexof">
+          <input type="radio" class="u-input" name="active-project" id="project-bovacademy">
+          <input type="radio" class="u-input" name="active-project" id="project-ui-framework">
           <ul class="tab-toggles">
-            <li class="project-image-gallery"><label for="project-image-gallery">Image Gallery</label></li>
-            <li class="project-accordion"><label for="project-accordion">Accordion</label></li>
-            <li class="project-responsive-tabs"><label for="project-responsive-tabs">Tabs</label></li>
-            <li class="project-multipage-website"><label for="project-multipage-website">Multipage Website</label></li>
-            <li class="project-forms"><label for="project-forms">Forms</label></li>
-            <li class="project-calculator"><label for="project-calculator">Calculator</label></li>
-            <li class="project-product-listing"><label for="project-product-listing">Product Listing Page</label></li>
-            <li class="project-questionnaire"><label for="project-questionnaire">Questionnaire</label></li>
-            <li class="project-jigsaw-puzzle"><label for="project-jigsaw-puzzle">Jigsaw Puzzle</label></li>
-            <li class="project-interactive-i-element"><label for="project-interactive-i-element">Interactive &lt;i&gt; Example</label></li>
-            <li class="project-interactive-attribute"><label for="project-interactive-attribute">Interactive Attribute Selector Example</label></li>
-            <li class="project-interactive-lastindexof"><label for="project-interactive-lastindexof">Interactive lastIndexOf Example</label></li>
-            <li class="project-bovacademy"><label for="project-bovacademy">Bov Academy Website</label></li>
-            <li class="project-ui-framework"><label for="project-ui-framework">Seed UI Framework</label></li>
+            <li class="project-image-gallery">
+              <label for="project-image-gallery">Image Gallery</label>
+            </li>
+            <li class="project-accordion">
+              <label for="project-accordion">Accordion</label>
+            </li>
+            <li class="project-responsive-tabs">
+              <label for="project-responsive-tabs">Tabs</label>
+            </li>
+            <li class="project-multipage-website">
+              <label for="project-multipage-website">Multipage Website</label>
+            </li>
+            <li class="project-forms">
+              <label for="project-forms">Forms</label>
+            </li>
+            <li class="project-calculator">
+              <label for="project-calculator">Calculator</label>
+            </li>
+            <li class="project-product-listing">
+              <label for="project-product-listing">Product Listing Page</label>
+            </li>
+            <li class="project-questionnaire">
+              <label for="project-questionnaire">Questionnaire</label>
+            </li>
+            <li class="project-jigsaw-puzzle">
+              <label for="project-jigsaw-puzzle">Jigsaw Puzzle</label>
+            </li>
+            <li class="project-interactive-i-element">
+              <label for="project-interactive-i-element">Interactive &lt;i&gt; Example</label>
+            </li>
+            <li class="project-interactive-attribute">
+              <label for="project-interactive-attribute">Interactive Attribute Selector Example</label>
+            </li>
+            <li class="project-interactive-lastindexof">
+              <label for="project-interactive-lastindexof">Interactive lastIndexOf Example</label>
+            </li>
+            <li class="project-bovacademy">
+              <label for="project-bovacademy">Bov Academy Website</label>
+            </li>
+            <li class="project-ui-framework">
+              <label for="project-ui-framework">Seed UI Framework</label>
+            </li>
           </ul>
           <ul class="tab-contents">
 
             <li class="project-image-gallery">
               <label class="accordion-toggles" for="project-image-gallery">Simple Image Gallery</label>
               <section class="carousel">
-                <input id="description-image-gallery" class="utility-input project-description-toggle" type="radio" name="image-gallery" checked="checked">
-                <input id="presentation-image-gallery" class="utility-input project-presentation-toggle" type="radio" name="image-gallery">
-                <input id="live-image-gallery" class="utility-input project-live-toggle" type="radio" name="image-gallery">
+                <input id="description-image-gallery" class="u-input project-description-toggle" type="radio" name="image-gallery" checked="checked">
+                <input id="presentation-image-gallery" class="u-input project-presentation-toggle" type="radio" name="image-gallery">
+                <input id="live-image-gallery" class="u-input project-live-toggle" type="radio" name="image-gallery">
                 <header>
                   <h3 class="project-name">Simple Image Gallery</h3>
                 </header>
@@ -153,9 +181,9 @@
             <li class="project-accordion">
               <label class="accordion-toggles" for="project-accordion">Accordion</label>
               <section class="carousel">
-                <input id="description-accordion" class="utility-input project-description-toggle" type="radio" name="accordion" checked="checked">
-                <input id="presentation-accordion" class="utility-input project-presentation-toggle" type="radio" name="accordion">
-                <input id="live-accordion" class="utility-input project-live-toggle" type="radio" name="accordion">
+                <input id="description-accordion" class="u-input project-description-toggle" type="radio" name="accordion" checked="checked">
+                <input id="presentation-accordion" class="u-input project-presentation-toggle" type="radio" name="accordion">
+                <input id="live-accordion" class="u-input project-live-toggle" type="radio" name="accordion">
                 <header>
                   <h3 class="project-name">Accordion</h3>
                 </header>
@@ -196,9 +224,9 @@
             <li class="project-responsive-tabs">
               <label class="accordion-toggles" for="project-responsive-tabs">Tabs</label>
               <section class="carousel">
-                <input id="description-responsive-tabs" class="utility-input project-description-toggle" type="radio" name="responsive-tabs" checked="checked">
-                <input id="presentation-responsive-tabs" class="utility-input project-presentation-toggle" type="radio" name="responsive-tabs">
-                <input id="live-responsive-tabs" class="utility-input project-live-toggle" type="radio" name="responsive-tabs">
+                <input id="description-responsive-tabs" class="u-input project-description-toggle" type="radio" name="responsive-tabs" checked="checked">
+                <input id="presentation-responsive-tabs" class="u-input project-presentation-toggle" type="radio" name="responsive-tabs">
+                <input id="live-responsive-tabs" class="u-input project-live-toggle" type="radio" name="responsive-tabs">
                 <header>
                   <h3 class="project-name">Tabs</h3>
                 </header>
@@ -239,9 +267,9 @@
             <li class="project-multipage-website">
               <label class="accordion-toggles" for="project-multipage-website">Multipage Website</label>
               <section class="carousel">
-                <input id="description-multipage-website" class="utility-input project-description-toggle" type="radio" name="multipage-website" checked="checked">
-                <input id="presentation-multipage-website" class="utility-input project-presentation-toggle" type="radio" name="multipage-website">
-                <input id="live-multipage-website" class="utility-input project-live-toggle" type="radio" name="multipage-website">
+                <input id="description-multipage-website" class="u-input project-description-toggle" type="radio" name="multipage-website" checked="checked">
+                <input id="presentation-multipage-website" class="u-input project-presentation-toggle" type="radio" name="multipage-website">
+                <input id="live-multipage-website" class="u-input project-live-toggle" type="radio" name="multipage-website">
                 <header>
                   <h3 class="project-name">Multipage Website</h3>
                 </header>
@@ -282,9 +310,9 @@
             <li class="project-forms">
               <label class="accordion-toggles" for="project-forms">Forms</label>
               <section class="carousel">
-                <input id="description-forms" class="utility-input project-description-toggle" type="radio" name="forms" checked="checked">
-                <input id="presentation-forms" class="utility-input project-presentation-toggle" type="radio" name="forms">
-                <input id="live-forms" class="utility-input project-live-toggle" type="radio" name="forms">
+                <input id="description-forms" class="u-input project-description-toggle" type="radio" name="forms" checked="checked">
+                <input id="presentation-forms" class="u-input project-presentation-toggle" type="radio" name="forms">
+                <input id="live-forms" class="u-input project-live-toggle" type="radio" name="forms">
                 <header>
                   <h3 class="project-name">Forms</h3>
                 </header>
@@ -325,9 +353,9 @@
             <li class="project-calculator">
               <label class="accordion-toggles" for="project-calculator">Calculator</label>
               <section class="carousel">
-                <input id="description-calculator" class="utility-input project-description-toggle" type="radio" name="calculator" checked="checked">
-                <input id="presentation-calculator" class="utility-input project-presentation-toggle" type="radio" name="calculator">
-                <input id="live-calculator" class="utility-input project-live-toggle" type="radio" name="calculator">
+                <input id="description-calculator" class="u-input project-description-toggle" type="radio" name="calculator" checked="checked">
+                <input id="presentation-calculator" class="u-input project-presentation-toggle" type="radio" name="calculator">
+                <input id="live-calculator" class="u-input project-live-toggle" type="radio" name="calculator">
                 <header>
                   <h3 class="project-name">Calculator</h3>
                 </header>
@@ -368,9 +396,9 @@
             <li class="project-product-listing">
               <label class="accordion-toggles" for="project-product-listing">Product Listing Page</label>
               <section class="carousel">
-                <input id="description-product-listing" class="utility-input project-description-toggle" type="radio" name="product-listing" checked="checked">
-                <input id="presentation-product-listing" class="utility-input project-presentation-toggle" type="radio" name="product-listing">
-                <input id="live-product-listing" class="utility-input project-live-toggle" type="radio" name="product-listing">
+                <input id="description-product-listing" class="u-input project-description-toggle" type="radio" name="product-listing" checked="checked">
+                <input id="presentation-product-listing" class="u-input project-presentation-toggle" type="radio" name="product-listing">
+                <input id="live-product-listing" class="u-input project-live-toggle" type="radio" name="product-listing">
                 <header>
                   <h3 class="project-name">Product Listing Page</h3>
                 </header>
@@ -411,9 +439,9 @@
             <li class="project-questionnaire">
               <label class="accordion-toggles" for="project-questionnaire">Questionnaire</label>
               <section class="carousel">
-                <input id="description-questionnaire" class="utility-input project-description-toggle" type="radio" name="questionnaire" checked="checked">
-                <input id="presentation-questionnaire" class="utility-input project-presentation-toggle" type="radio" name="questionnaire">
-                <input id="live-questionnaire" class="utility-input project-live-toggle" type="radio" name="questionnaire">
+                <input id="description-questionnaire" class="u-input project-description-toggle" type="radio" name="questionnaire" checked="checked">
+                <input id="presentation-questionnaire" class="u-input project-presentation-toggle" type="radio" name="questionnaire">
+                <input id="live-questionnaire" class="u-input project-live-toggle" type="radio" name="questionnaire">
                 <header>
                   <h3 class="project-name">Questionnaire</h3>
                 </header>
@@ -454,9 +482,9 @@
             <li class="project-jigsaw-puzzle">
               <label class="accordion-toggles" for="project-jigsaw-puzzle">Jisgsaw Puzzle</label>
               <section class="carousel">
-                <input id="description-jigsaw-puzzle" class="utility-input project-description-toggle" type="radio" name="jigsaw-puzzle" checked="checked">
-                <input id="presentation-jigsaw-puzzle" class="utility-input project-presentation-toggle" type="radio" name="jigsaw-puzzle">
-                <input id="live-jigsaw-puzzle" class="utility-input project-live-toggle" type="radio" name="jigsaw-puzzle">
+                <input id="description-jigsaw-puzzle" class="u-input project-description-toggle" type="radio" name="jigsaw-puzzle" checked="checked">
+                <input id="presentation-jigsaw-puzzle" class="u-input project-presentation-toggle" type="radio" name="jigsaw-puzzle">
+                <input id="live-jigsaw-puzzle" class="u-input project-live-toggle" type="radio" name="jigsaw-puzzle">
                 <header>
                   <h3 class="project-name">Jisgsaw Puzzle</h3>
                 </header>
@@ -497,9 +525,9 @@
             <li class="project-interactive-i-element">
               <label class="accordion-toggles" for="project-interactive-i-element">Interactive &lt;i&gt; Example</label>
               <section class="carousel">
-                <input id="description-interactive-i-element" class="utility-input project-description-toggle" type="radio" name="interactive-i-element" checked="checked">
-                <input id="presentation-interactive-i-element" class="utility-input project-presentation-toggle" type="radio" name="interactive-i-element">
-                <input id="live-interactive-i-element" class="utility-input project-live-toggle" type="radio" name="interactive-i-element">
+                <input id="description-interactive-i-element" class="u-input project-description-toggle" type="radio" name="interactive-i-element" checked="checked">
+                <input id="presentation-interactive-i-element" class="u-input project-presentation-toggle" type="radio" name="interactive-i-element">
+                <input id="live-interactive-i-element" class="u-input project-live-toggle" type="radio" name="interactive-i-element">
                 <header>
                   <h3 class="project-name">Interactive &lt;i&gt; Example</h3>
                 </header>
@@ -540,9 +568,9 @@
             <li class="project-interactive-attribute">
               <label class="accordion-toggles" for="project-interactive-attribute">Interactive Attribute Selector Example</label>
               <section class="carousel">
-                <input id="description-interative-attribute" class="utility-input project-description-toggle" type="radio" name="interative-attribute" checked="checked">
-                <input id="presentation-interative-attribute" class="utility-input project-presentation-toggle" type="radio" name="interative-attribute">
-                <input id="live-interative-attribute" class="utility-input project-live-toggle" type="radio" name="interative-attribute">
+                <input id="description-interative-attribute" class="u-input project-description-toggle" type="radio" name="interative-attribute" checked="checked">
+                <input id="presentation-interative-attribute" class="u-input project-presentation-toggle" type="radio" name="interative-attribute">
+                <input id="live-interative-attribute" class="u-input project-live-toggle" type="radio" name="interative-attribute">
                 <header>
                   <h3 class="project-name">Interactive Attribute Selector Example</h3>
                 </header>
@@ -583,9 +611,9 @@
             <li class="project-interactive-lastindexof">
               <label class="accordion-toggles" for="project-interactive-lastindexof">Interactive 'lastIndexOf' Example</label>
               <section class="carousel">
-                <input id="description-interactive-lastindexof" class="utility-input project-description-toggle" type="radio" name="interactive-lastindexof" checked="checked">
-                <input id="presentation-interactive-lastindexof" class="utility-input project-presentation-toggle" type="radio" name="interactive-lastindexof">
-                <input id="live-interactive-lastindexof" class="utility-input project-live-toggle" type="radio" name="interactive-lastindexof">
+                <input id="description-interactive-lastindexof" class="u-input project-description-toggle" type="radio" name="interactive-lastindexof" checked="checked">
+                <input id="presentation-interactive-lastindexof" class="u-input project-presentation-toggle" type="radio" name="interactive-lastindexof">
+                <input id="live-interactive-lastindexof" class="u-input project-live-toggle" type="radio" name="interactive-lastindexof">
                 <header>
                   <h3 class="project-name">Interactive 'lastIndexOf' Example</h3>
                 </header>
@@ -626,9 +654,9 @@
             <li class="project-bovacademy">
               <label class="accordion-toggles" for="project-bovacademy">Bov Academy Website</label>
               <section class="carousel">
-                <input id="description-bovacademy" class="utility-input project-description-toggle" type="radio" name="bovacademy" checked="checked">
-                <input id="presentation-bovacademy" class="utility-input project-presentation-toggle" type="radio" name="bovacademy">
-                <input id="live-bovacademy" class="utility-input project-live-toggle" type="radio" name="bovacademy">
+                <input id="description-bovacademy" class="u-input project-description-toggle" type="radio" name="bovacademy" checked="checked">
+                <input id="presentation-bovacademy" class="u-input project-presentation-toggle" type="radio" name="bovacademy">
+                <input id="live-bovacademy" class="u-input project-live-toggle" type="radio" name="bovacademy">
                 <header>
                   <h3 class="project-name">Bov Academy Website</h3>
                 </header>
@@ -669,9 +697,9 @@
             <li class="project-ui-framework">
               <label class="accordion-toggles" for="project-ui-framework">Seed UI Framework</label>
               <section class="carousel">
-                <input id="description-ui-framework" class="utility-input project-description-toggle" type="radio" name="ui-framework" checked="checked">
-                <input id="presentation-ui-framework" class="utility-input project-presentation-toggle" type="radio" name="ui-framework">
-                <input id="live-ui-framework" class="utility-input project-live-toggle" type="radio" name="ui-framework">
+                <input id="description-ui-framework" class="u-input project-description-toggle" type="radio" name="ui-framework" checked="checked">
+                <input id="presentation-ui-framework" class="u-input project-presentation-toggle" type="radio" name="ui-framework">
+                <input id="live-ui-framework" class="u-input project-live-toggle" type="radio" name="ui-framework">
                 <header>
                   <h3 class="project-name">Seed UI Framework</h3>
                 </header>
@@ -715,7 +743,7 @@
 
     </section>
 
-    <blockquote id="skills" class="section-break text-center">
+    <blockquote id="skills" class="section-break u-text-center">
       <strong>&quot;Closed eyes view the world differently.&quot;<br></strong>
       — from the song <a href="https://youtu.be/IWYYmEczm2A">&quot;Majdan&quot;</a> by the Serbian band Block Out
     </blockquote>
@@ -724,8 +752,8 @@
       <div class="content">
         <h2>Skills</h2>
         <p>In this section I will try to estimate my skills. But, that is just that, an estimate, not an precise and objective measure of my skills.</p>
-        <div class="skill-graphs clearfix">
-          <div class="skill-graph-horizontal-labels clearfix">
+        <div class="skill-graphs u-clearfix">
+          <div class="skill-graph-horizontal-labels u-clearfix">
             <span>Frontend</span>
             <span>Backend</span>
           </div>
@@ -748,7 +776,7 @@
                   <li class="sass" data-level="competent" data-info="Competent: I am still learning SASS, but I am picking it up quickly."></li>
                 </ul>
               </div>
-              <div class="x-axis clearfix">
+              <div class="x-axis u-clearfix">
                 <ul class="topics">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -777,7 +805,7 @@
                   <li class="node" data-level="learning" data-info="Learning: Never worked much with Node.js, but I used it at a basic level."></li>
                 </ul>
               </div>
-              <div class="x-axis clearfix">
+              <div class="x-axis u-clearfix">
                 <ul class="topics">
                   <li>Command<br>line</li>
                   <li>PHP</li>
@@ -806,7 +834,7 @@
                   <li class="research" data-level="competent" data-info="Competent: I can find what I need, but I could use some more practice in this area."></li>
                 </ul>
               </div>
-              <div class="x-axis clearfix">
+              <div class="x-axis u-clearfix">
                 <ul class="topics">
                   <li>GIT</li>
                   <li>Public<br>speaking</li>
@@ -821,43 +849,51 @@
       </div>
     </section>
 
-    <blockquote id="contact" class="section-break text-center">
+    <blockquote id="contact" class="section-break u-text-center">
       <strong>&quot;When you die, you are not aware of it, and it is not hard for you. It's hard for other people. The same is when you're stupid.&quot;<br></strong>
       — serbian actor Zoran Radmilović
     </blockquote>
 
-    <section class="section contact clearfix">
+    <section class="section contact u-clearfix">
       <div class="content">
         <h2>Contact</h2>
         <p>If you'd like to get in touch with me,<br>check out my details on my business card.</p>
 
-        <div class="business-card clear">
-          <input class="flipped" type="checkbox" name="flip-check" id="flip">
+        <div class="business-card u-clear">
+          <input class="business-card__flip u-input" type="checkbox" name="flip-check" id="flip">
 
           <div class="card">
 
-            <div class="flip-card-front">
-              <img src="business_card/bg2.png">
+            <div class="card-side card-side--front">
+              <img class="background" src="img/business_card/bg2.png">
               <div class="card-content">
-                <span class="name pull-left">Vojislav Grujić</span>
-                <label title="Click here to see the other side" class="flip-label text-center" for="flip"><img src="business_card/flip.png"></label>
-                <p class="career clear">Advanced Frontend Developer, first Cohort</p>
-                <p class="about">Vojislav is an astrophysicist with a great passion in web development. He is currently on his way to making great web development deeds.</p>
-                <div class="links clearfix">
-                  <div class="pull-left">
-                    <p class="email"><a href="mailto:vojislav.grujic@gmail.com">vojislav.grujic@gmail.com</a></p>
+                <div class="title u-pull-left">
+                  <span class="title__name">Vojislav Grujić</span>
+                  <p class="title__career h--clear">Advanced Frontend Developer, first Cohort</p>
+                </div>
+                <label title="Click here to see the other side" class="flip-toggle u-text-center" for="flip"><img class="flip-toggle__button" src="img/business_card/flip.png"></label>
+                <p class="card-about u-clear">Vojislav is an astrophysicist with a great passion in web development. He is currently on his way to making great web development deeds.</p>
+                <div class="contact-info u-clearfix">
+                  <span class="contact-info__email u-pull-left">
+                    vojislav.grujic<span class="u-invisible">"spam protection: remove the text inside the quotes and the quotes to get the valid email"</span>@gmail.com
+                  </span>
+                  <div class="contact-info__social contact-info__social--github u-pull-right">
+                    <a class="social-link" href="https://github.com/Gruximillian" target="_blank">GitHub</a>
                   </div>
-                  <div class="social-icons github pull-right"><a href="https://github.com/Gruximillian" target="_blank">GitHub</a></div>
-                  <div class="social-icons twitter pull-right"><a href="https://twitter.com/Gruximillian" target="_blank">Twitter</a></div>
+                  <div class="contact-info__social contact-info__social--twitter u-pull-right">
+                    <a class="social-link" href="https://twitter.com/Gruximillian" target="_blank">Twitter</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="flip-card-back">
-              <img src="business_card/bg_back.png">
+            <div class="card-side card-side--back">
+              <img class="background" src="img/business_card/bg_back.png">
               <div class="card-content">
-                <span class="name pull-left">Vojislav Grujić</span>
-                <label class="flip-label text-center" for="flip"><img src="business_card/flip.png"></label>
+                <div class="title u-pull-left">
+                  <span class="title__name title__name--back">Vojislav Grujić</span>
+                </div>
+                <label class="flip-toggle u-text-center" for="flip"><img class="flip-toggle__button" src="img/business_card/flip.png"></label>
               </div>
             </div>
 
@@ -869,7 +905,7 @@
       </div>
     </section>
 
-    <blockquote id="contact" class="section-break text-center">
+    <blockquote id="contact" class="section-break u-text-center">
       <strong>&quot;Fake it, 'till you make it!!&quot;<br></strong>
       — common advice for the new and self-doubting programmers
     </blockquote>
@@ -881,7 +917,7 @@
     <!-- items and to be able to scroll to the proper section of the document     -->
 
     <span class="header-line"></span>
-    <input type="checkbox" class="utility-input" id="menu-switch">
+    <input type="checkbox" class="u-input" id="menu-switch">
 
     <header class="header">
       <span class="developer name">Vojislav Grujić</span>
@@ -915,13 +951,13 @@
 
     <!-- END OF HEADER SECTION -->
 
-    <footer class="footer text-center">
+    <footer class="footer u-text-center">
       <p>It's not a bug, it's a FOOTER!</p>
       <p class="author-copyright">&copy; Vojislav Grujić - 2017</p>
       <div class="tool-eye">
         <!-- HAVE FUN -->
         <label class="shock" for="shock"></label>
-        <input id="shock" class="utility-input" type="checkbox" name="shock">
+        <input id="shock" class="u-input" type="checkbox" name="shock">
         <label for="shock">
           <img class="shock" src="img/VG.jpg">
         </label>
@@ -941,6 +977,7 @@
       var iframeClass = this.getAttribute('for'),
           iframe = document.querySelector('li.' + iframeClass + ' iframe');
       iframe.setAttribute('src', iframe.dataset.src);
+      this.removeEventListener('mouseover', loadIframe);
     }
 
     for ( i = 0; i < len; i++ ) {
