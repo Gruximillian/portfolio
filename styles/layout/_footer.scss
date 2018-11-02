@@ -35,7 +35,6 @@
     width: 70px;
   }
 }
-
 @media(min-width: 750px) {
   #shock:checked + label img.shock {
     width: 100vw;
@@ -55,4 +54,9 @@
     width: 20%;
   }
 }
-
+.facts {
+  color: #555;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 10px 20px;
+}
