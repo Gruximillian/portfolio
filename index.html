@@ -962,6 +962,10 @@
           <img class="shock" src="img/VG.jpg">
         </label>
       </div>
+      <div id="number-facts">
+        <div class="button">Funny numbers</div>
+        <p class="facts"></p>
+      </div>
     </footer>
 
   </div>
@@ -984,6 +988,35 @@
       iframeTriggers[i].addEventListener('mouseover', loadIframe);
     }
   </script> -->
-
+  <script type="text/javascript">
+    const factButton = document.querySelector('#number-facts .button');
+    const factDisplay = document.querySelector('#number-facts .facts');
+    function generateRandomNumber () {
+      return Math.floor(Math.random() * 200);
+    }
+    function loadFact(factContainer) {
+      return function () {
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+          // console.log(xhr);
+          if (xhr.status === 200) {
+            factContainer.textContent = xhr.response;
+          } else {
+            console.log('Status not 200');
+            factContainer.textContent = 'No facts today!';
+          }
+        }
+        xhr.onerror = function () {
+          console.log('Some error');
+          // console.log(xhr);
+          factContainer.textContent = 'No facts today!';
+        }
+        xhr.open('GET', `http://numbersapi.com/${generateRandomNumber()}`);
+        xhr.send();
+      }
+    }
+    loadFact(factDisplay)();
+    factButton.addEventListener('click', loadFact(factDisplay));
+  </script>
 </body>
 </html>
