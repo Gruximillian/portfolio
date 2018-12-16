@@ -1,1 +1,1 @@
-# [Vojislav Grujić Portfolio site](https://vojislav.seaofquarks.net/portfolio)
+# [Vojislav Grujić Portfolio site](https://seaofquarks.net/)
